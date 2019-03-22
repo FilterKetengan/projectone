@@ -13,48 +13,50 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="#">Navbar</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarResponsive">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Home</a>
-		      </li>
-		    </ul>
-		  </div>
-		</div>
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">Navbar</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarResponsive">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Home</a>
+			      </li>
+			    </ul>
+			  </div>
+			</div>
 		</nav>
 		<div class="container">
   			<h1>Student Data Result</h1>
-  			<table id="tableStudent" class="table table-bordered">
-  				<thead class="thead-dark">
-	  			    <tr>
-	  			    	<th style="text-align: center;" class="small">Nomor Siswa</th>
-	  			    	<th style="text-align: center;" class="small">Nama</th>
-	  			    	<th style="text-align: center;" class="small">Nomor Induk</th>
-	  			    	<th style="text-align: center;" class="small">Kelas</th>
-	  			    	<th style="text-align: center;" class="small">Angsuran Ke</th>
-	  			    	<th style="text-align: center;" class="small">Tanggal</th>
-	  			    	<th style="text-align: center;" class="small">Jumlah Angsuran</th>
-	  			    	<th style="text-align: center;" class="small">Jenis Sumbangan</th>
-	  			    	<th style="text-align: center;" class="small">Tanggal</th>
-	  			    	<th style="text-align: center;" class="small">Jumlah Sumbangan</th>
-	  			    </tr>
-  			    </thead>
-  			</table>
+  			<div class="table-responsive">
+	  			<table id="tableStudent" class="table table-bordered">
+	  				<thead class="thead-dark">
+		  			    <tr>
+		  			    	<th style="text-align: center;" class="small">Nomor Siswa</th>
+		  			    	<th style="text-align: center;" class="small">Nama</th>
+		  			    	<th style="text-align: center;" class="small">Nomor Induk</th>
+		  			    	<th style="text-align: center;" class="small">Kelas</th>
+		  			    	<th style="text-align: center;" class="small">Angsuran Ke</th>
+		  			    	<th style="text-align: center;" class="small">Tanggal</th>
+		  			    	<th style="text-align: center;" class="small">Jumlah Angsuran</th>
+		  			    	<th style="text-align: center;" class="small">Jenis Sumbangan</th>
+		  			    	<th style="text-align: center;" class="small">Tanggal</th>
+		  			    	<th style="text-align: center;" class="small">Jumlah Sumbangan</th>
+		  			    </tr>
+	  			    </thead>
+	  			</table>
+  			</div>
   		</div>
   		<br></br>
 		<form class="main-form">
-	  		<div>
+	  		<div class="form-group">
 				<fieldset>
 					<legend>Student Information</legend>
-					<div class="form-group">
+					<p>
 						<label for="NomorUrut">Nomor Siswa</label>
 						<input id="NomorUrut" name="nomor-urut" type="text" placeholder="mohon masukkan angka" class="form-control">
-					</div>
+					</p>
 					<p>
 						<label for="fullName">Nama</label>
 						<input id="fullName" name="full-name" type="text" placeholder="nama lengkap" class="form-control">
@@ -69,6 +71,7 @@
 					</p>
 				</fieldset>
 			</div>
+			<div class="form-group">
 				<fieldset>
 					<legend>School Infrastructure Fund</legend>
 					<p>
